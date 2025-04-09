@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Moon, Sun } from "lucide-react";
 
@@ -86,10 +86,26 @@ const Contact = () => (
   <section>
     <h2 className="text-2xl mb-4 uppercase tracking-wide">Contact</h2>
     <form className="max-w-md space-y-4">
-      <input type="text" placeholder="Name" className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#2c2c2c] text-sm" />
-      <input type="email" placeholder="Email" className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#2c2c2c] text-sm" />
-      <textarea placeholder="Message" className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#2c2c2c] text-sm h-24"></textarea>
-      <button type="submit" className="px-4 py-2 bg-black text-white dark:bg-white dark:text-black text-xs uppercase tracking-wide">Submit</button>
+      <input
+        type="text"
+        placeholder="Name"
+        className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#2c2c2c] text-sm"
+      />
+      <input
+        type="email"
+        placeholder="Email"
+        className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#2c2c2c] text-sm"
+      />
+      <textarea
+        placeholder="Message"
+        className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#2c2c2c] text-sm h-24"
+      ></textarea>
+      <button
+        type="submit"
+        className="px-4 py-2 bg-black text-white dark:bg-white dark:text-black text-xs uppercase tracking-wide"
+      >
+        Submit
+      </button>
     </form>
   </section>
 );
