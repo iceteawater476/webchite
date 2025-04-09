@@ -1,0 +1,24 @@
+import React, { useState, useEffect } from "react"; import { Moon, Sun } from "lucide-react"; import { Link, BrowserRouter as Router, Routes, Route } from "react-router-dom"; const Layout = ({ children, darkMode, setDarkMode }) => (
+Macrodata Refinement Terminal
+Home Videos Photos Vision About Contact
+{children}
+© 2025 Lumon Industries | MDR Department
+); const Home = () => (
+Welcome to Your Work Terminal
+
+You are now entering the severed floor. This interface serves to log, organize, and showcase your output as a Macrodata Refiner. Remain focused. Your work matters.
+); const Videos = () => (
+Video Logs
+); const Photos = () => (
+Photo Documentation
+); const Vision = () => (
+Vision Statement
+
+Our mission is to refine data so thoroughly that the distinction between input and truth becomes meaningless. Each frame, each metric—an offering to corporate clarity.
+); const About = () => (
+About Me
+
+A macrodata refiner with creative ambitions beyond the severed floor. This site archives digital output and lays the groundwork for future corporate endeavors.
+); const Contact = () => (
+Contact
+); const MacrodataRefinerSite = () => { const [darkMode, setDarkMode] = useState(true); return ( } /> } /> } /> } /> } /> } /> ); }; export default MacrodataRefinerSite; 
